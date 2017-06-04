@@ -28,6 +28,7 @@ namespace MyBooks
 
         private void btn_loeschen_Click(object sender, EventArgs e)
         {
+            delete_books();
             this.Close();
         }
 
@@ -96,5 +97,40 @@ namespace MyBooks
                 this.connection.Close();
             }
         }
+
+        // Bücher löschen
+        private void delete_books()
+        {
+            try
+            {
+                mysqlconnect();
+
+                String titel = cb_titel.Text;
+
+                String[] eid = titel.Split(':');
+
+                if (this.OpenConnection() == true)
+                {
+                    command = new MySqlCommand();
+
+                    // command = connection.CreateCommand();
+                    command.Connection = connection;
+
+                    command.CommandText = "DELETE FROM ebooks WHERE eid = @eid;";
+
+                    // leer
+                    command.Prepare();
+
+                    command.Parameters.AddWithValue("@eid", eid[0]);
+                    command.ExecuteNonQuery();
+                    this.CloseConnection();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fehler: \n" + ex);
+            }
+        }
+
     }
 }

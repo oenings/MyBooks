@@ -32,3 +32,4 @@ C:\Daten\Programmierung\MyBooks\MyBooks_v3\MyBooks\obj\Debug\MyBooks.Buecher_erf
 C:\Daten\Programmierung\MyBooks\MyBooks_v3\MyBooks\obj\Debug\MyBooks.Buecher_loeschen.resources
 C:\Daten\Programmierung\MyBooks\MyBooks_v3\MyBooks\obj\Debug\MyBooks.Properties.Resources.resources
 C:\Daten\Programmierung\MyBooks\MyBooks_v3\MyBooks\obj\Debug\MyBooks.csproj.GenerateResource.Cache
+C:\Daten\Programmierung\MyBooks\MyBooks\MyBooks\obj\Debug\MyBooks.Buecher_loeschen.resources
