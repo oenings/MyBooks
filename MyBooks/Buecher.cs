@@ -77,6 +77,9 @@ namespace MyBooks
 
         private void Buecher_Load(object sender, EventArgs e)
         {
+            // 7-Segment-Anzeige
+            sevenSegmentArray1.Value = "27.30";
+
             mysqlconnect();
 
             if (this.OpenConnection() == true)
