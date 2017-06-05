@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_erfassen = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_loeschen = new System.Windows.Forms.Button();
             this.sevenSegmentArray1 = new DmitryBrant.CustomControls.SevenSegmentArray();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,18 +78,52 @@
             this.sevenSegmentArray1.ElementPadding = new System.Windows.Forms.Padding(4);
             this.sevenSegmentArray1.ElementWidth = 10;
             this.sevenSegmentArray1.ItalicFactor = -0.1F;
-            this.sevenSegmentArray1.Location = new System.Drawing.Point(176, 12);
+            this.sevenSegmentArray1.Location = new System.Drawing.Point(165, 12);
             this.sevenSegmentArray1.Name = "sevenSegmentArray1";
             this.sevenSegmentArray1.Size = new System.Drawing.Size(163, 61);
             this.sevenSegmentArray1.TabIndex = 3;
             this.sevenSegmentArray1.TabStop = false;
             this.sevenSegmentArray1.Value = null;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "COM1",
+            "COM2",
+            "COM3",
+            "COM4",
+            "COM5",
+            "COM6",
+            "COM7",
+            "COM8",
+            "COM9"});
+            this.comboBox1.Location = new System.Drawing.Point(353, 52);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(102, 21);
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(350, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Comport";
+            // 
+            // serialPort1
+            // 
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
+            // 
             // Buecher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 328);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.sevenSegmentArray1);
             this.Controls.Add(this.btn_loeschen);
             this.Controls.Add(this.dataGridView1);
@@ -96,6 +134,7 @@
             this.Load += new System.EventHandler(this.Buecher_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -105,6 +144,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_loeschen;
         private DmitryBrant.CustomControls.SevenSegmentArray sevenSegmentArray1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }
 

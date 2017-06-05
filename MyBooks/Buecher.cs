@@ -98,5 +98,24 @@ namespace MyBooks
             Buecher_loeschen loeschen = new Buecher_loeschen();
             loeschen.ShowDialog();
         }
+
+        private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
+        {
+            if (e.EventType == System.IO.Ports.SerialData.Eof) return;
+            sevenSegmentArray1.Value = serialPort1.ReadLine();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort1.PortName = Convert.ToString(comboBox1.SelectedItem);
+                serialPort1.Open();
+            }
+            catch
+            {
+                MessageBox.Show(this, "Fehler!");
+            }
+        }
     }
 }
