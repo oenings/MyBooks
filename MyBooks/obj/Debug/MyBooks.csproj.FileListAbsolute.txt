@@ -33,3 +33,15 @@ C:\Daten\Programmierung\MyBooks\MyBooks_v3\MyBooks\obj\Debug\MyBooks.Buecher_loe
 C:\Daten\Programmierung\MyBooks\MyBooks_v3\MyBooks\obj\Debug\MyBooks.Properties.Resources.resources
 C:\Daten\Programmierung\MyBooks\MyBooks_v3\MyBooks\obj\Debug\MyBooks.csproj.GenerateResource.Cache
 C:\Daten\Programmierung\MyBooks\MyBooks\MyBooks\obj\Debug\MyBooks.Buecher_loeschen.resources
+C:\Daten\Programmierung\MyBooks\MyBooks\bin\Debug\MyBooks.exe.config
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.csprojResolveAssemblyReference.cache
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.Buecher.resources
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.Buecher_erfassen.resources
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.Buecher_loeschen.resources
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.Properties.Resources.resources
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.csproj.GenerateResource.Cache
+C:\Daten\Programmierung\MyBooks\MyBooks\bin\Debug\MyBooks.exe
+C:\Daten\Programmierung\MyBooks\MyBooks\bin\Debug\MyBooks.pdb
+C:\Daten\Programmierung\MyBooks\MyBooks\bin\Debug\MySql.Data.dll
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.exe
+C:\Daten\Programmierung\MyBooks\MyBooks\obj\Debug\MyBooks.pdb
